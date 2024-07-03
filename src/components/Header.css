@@ -1,0 +1,20 @@
+/* Header.css */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-link {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  /* color: inherit; */
+  padding: 0 !important;
+}

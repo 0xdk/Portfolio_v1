@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'SourceSans3-Light';
+  src: local('SourceSans3-Light'),
+    url('./theme/fonts/SourceSans3-Light.woff') format('woff'),
+    url('./theme/fonts/SourceSans3-Light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SourceSans3-Regular';
+  src: local('SourceSans3-Regular'),
+    url('./theme/fonts/SourceSans3-Regular.woff') format('woff'),
+    url('./theme/fonts/SourceSans3-Regular.woff2') format('woff2');
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+body #root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  line-height: 1.6rem;
+  text-underline-offset: 0.25rem;
+}
+
+body main {
+  flex: 1 0 auto;
+}
+
+body main section.MuiContainer-root {
+  padding: 0;
+}
+
+body footer {
+  flex-shrink: 0;
+}

@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'SourceSans3-Light';
+  src: local('SourceSans3-Light'),
+    url('./Theme/fonts/SourceSans3-Light.woff') format('woff'),
+    url('./Theme/fonts/SourceSans3-Light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SourceSans3-Regular';
+  src: local('SourceSans3-Regular'),
+    url('./Theme/fonts/SourceSans3-Regular.woff') format('woff'),
+    url('./Theme/fonts/SourceSans3-Regular.woff2') format('woff2');
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: 'SourceSans3-Light';
+}
+
+body #root {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  line-height: 1.6rem;
+  text-underline-offset: 0.25rem;
+}
+
+body main {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+body main section.MuiContainer-root {
+  padding: 0;
+}
+
+body footer {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
