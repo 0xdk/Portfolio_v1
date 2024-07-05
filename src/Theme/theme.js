@@ -1,10 +1,11 @@
 import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 
 // Self-hosted fonts
-import SourceSans3Light from './fonts/SourceSans3-Light.woff';
-import SourceSans3Light2 from './fonts/SourceSans3-Light.woff2';
-import SourceSans3Regular from './fonts/SourceSans3-Regular.woff';
-import SourceSans3Regular2 from './fonts/SourceSans3-Regular.woff2';
+
+import RalewayRegular from './fonts/RalewayRegular.woff';
+import RalewayRegular2 from './fonts/RalewayRegular.woff2';
+import RalewayMedium from './fonts/RalewayMedium.woff';
+import RalewayMedium2 from './fonts/RalewayMedium.woff2';
 
 // Default CSS
 import '../App.css';
@@ -20,7 +21,7 @@ let theme = createTheme({
       main: '#627E4F',
     },
     info: {
-      main: '#FFAABE',
+      main: '#DBE2E9',
     },
     error: {
       main: '#ff1744',
@@ -33,57 +34,51 @@ let theme = createTheme({
     },
   },
   typography: {
-    fontFamily: 'SourceSans3-Regular, sans-serif',
+    fontFamily: 'RalewayRegular',
     h1: {
-      fontFamily: 'SourceSans3-Light',
+      fontFamily: 'RalewayRegular',
       fontSize: '3rem',
       letterSpacing: 1,
     },
     h2: {
-      fontFamily: 'SourceSans3-Light',
+      fontFamily: 'RalewayRegular',
       letterSpacing: 1,
-      fontSize: '3rem',
+      fontSize: '2.5rem',
     },
     h5: {
-      fontFamily: 'SourceSans3-Light',
+      fontFamily: 'RalewayRegular',
       letterSpacing: 1,
       fontSize: '1.5rem',
     },
-
-    // nameTitle: {
-    //   fontFamily: 'SourceSans3-Regular',
-    //   letterSpacing: 1,
-    //   fontSize: '2rem',
-    // },
     jobTitle: {
-      fontFamily: 'SourceSans3-Regular',
+      fontFamily: 'RalewayMedium',
       fontSize: '2rem',
     },
     repositoryLanguage: {
-      fontFamily: 'SourceSans3-Regular',
+      fontFamily: 'RalewayRegular',
       textTransform: 'uppercase',
     },
     repositoryDate: {
-      fontFamily: 'SourceSans3-Regular',
+      fontFamily: 'RalewayRegular',
     },
   },
   components: {
     MuiCssBaseline: {
       styleOverrides: `
         @font-face {
-          font-family: 'SourceSans3-Light';
-          src: local('SourceSans3-Light'), url(${SourceSans3Light}) format('woff'),
-            url(${SourceSans3Light2}) format('woff2');
+          font-family: 'RalewayMedium';
+          src: local('RalewayMedium'), url(${RalewayMedium}) format('woff'),
+            url(${RalewayMedium2}) format('woff2');
         }
 
         @font-face {
-          font-family: 'SourceSans3-Regular';
-          src: local('SourceSans3-Regular'), url(${SourceSans3Regular}) format('woff'),
-            url(${SourceSans3Regular2}) format('woff2');
+          font-family: 'RalewayRegular';
+          src: local('RalewayRegular'), url(${RalewayRegular}) format('woff'),
+            url(${RalewayRegular2}) format('woff2');
         }
 
         body {
-          font-family: 'SourceSans3-Regular, sans-serif';
+          font-family: 'RalewayRegular';
         }
       `,
     },
@@ -91,7 +86,7 @@ let theme = createTheme({
       styleOverrides: {
         root: {
           borderRadius: 6,
-          fontFamily: 'SourceSans3-Regular',
+          fontFamily: 'RalewayRegular',
           letterSpacing: 0.65,
         },
       },
@@ -100,7 +95,7 @@ let theme = createTheme({
       styleOverrides: {
         root: {
           color: '#627E4F',
-          fontFamily: 'SourceSans3-Regular',
+          fontFamily: 'RalewayRegular',
         },
       },
     },

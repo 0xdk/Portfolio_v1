@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import FavTools from './components/FavTools/FavTools';
 import Projects from './components/Projects/Projects';
+import AboutMe from './components/AboutMe';
 import Footer from './components/Footer';
 
 // MUI component
@@ -29,6 +30,7 @@ const App = () => {
       <Hero isSmallScreen={isSmallScreen} />
       <FavTools isSmallScreen={isSmallScreen} />
       <Projects />
+      <AboutMe isSmallScreen={isSmallScreen} />
       <Footer isSmallScreen={isSmallScreen} />
     </ThemeProvider>
   );

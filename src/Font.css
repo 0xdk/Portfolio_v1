@@ -1,13 +1,10 @@
 @font-face {
-  font-family: 'SourceSans3-Light';
-  src: local('SourceSans3-Light'),
-    url('./Theme/fonts/SourceSans3-Light.woff') format('woff'),
-    url('./Theme/fonts/SourceSans3-Light.woff2') format('woff2');
+  font-family: 'RalewayRegular';
+  src: local('RalewayRegular'), url(${RalewayRegular}) format('woff'),
+    url(${RalewayBold2}) format('woff2');
 }
-
 @font-face {
-  font-family: 'SourceSans3-Regular';
-  src: local('SourceSans3-Regular'),
-    url('./Theme/fonts/SourceSans3-Regular.woff') format('woff'),
-    url('./Theme/fonts/SourceSans3-Regular.woff2') format('woff2');
+  font-family: 'RalewayMedium';
+  src: local('RalewayMedium'), url(${RalewayMedium}) format('woff'),
+    url(${RalewayMedium2}) format('woff2');
 }

@@ -6,8 +6,8 @@ import Repository from './Repository/Repository';
 export default function Project(props) {
   const { id, path, smallScreen } = props;
   const BASE_URL = 'https://api.github.com/repos/0xdk';
-  // new token
-  const token = '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';
+  // new token Expires on Wed, Oct 2 2024.
+  const token = import.meta.env.VITE_GITHUB_REPOSITORY_TOKEN;
   const [githubData, setGithubData] = useState();
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -19,7 +19,7 @@ export default function Project(props) {
         setGithubData(data);
         setIsLoading(false);
       });
-  }, [path]);
+  }, [path, token]);
   return (
     <Card key={id} id={'project-card' + id} sx={{ padding: 0 }}>
       <CardContent>

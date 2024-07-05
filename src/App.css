@@ -1,21 +1,20 @@
 @font-face {
-  font-family: 'SourceSans3-Light';
-  src: local('SourceSans3-Light'),
-    url('./Theme/fonts/SourceSans3-Light.woff') format('woff'),
-    url('./Theme/fonts/SourceSans3-Light.woff2') format('woff2');
+  font-family: 'RalewayRegular';
+  src: local('RalewayRegular'),
+    url('./Theme/fonts/RalewayRegular.woff') format('woff'),
+    url('./Theme/fonts/RalewayRegular.woff2') format('woff2');
 }
-
 @font-face {
-  font-family: 'SourceSans3-Regular';
-  src: local('SourceSans3-Regular'),
-    url('./Theme/fonts/SourceSans3-Regular.woff') format('woff'),
-    url('./Theme/fonts/SourceSans3-Regular.woff2') format('woff2');
+  font-family: 'RalewayMedium';
+  src: local('RalewayMedium'),
+    url('./Theme/fonts/RalewayMedium.woff') format('woff'),
+    url('./Theme/fonts/RalewayMedium.woff2') format('woff2');
 }
 
 body {
   margin: 0;
   height: 100vh;
-  font-family: 'SourceSans3-Light';
+  font-family: 'RalewayRegular';
 }
 
 body #root {

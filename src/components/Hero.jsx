@@ -7,14 +7,21 @@ import {
   Typography,
   Button,
 } from '@mui/material';
-import profilePicture from '../images/profile-picture-3.png';
+import profilePicture from '../images/profile-picture.png';
 
 import './Hero.css';
+
+// For smooth Scrolling effect
+function handleClick(event) {
+  event.preventDefault();
+  const targetElement = document.getElementById('aboutMe');
+  targetElement.scrollIntoView({ behavior: 'smooth' });
+}
 
 export default function Hero(props) {
   const { isSmallScreen } = props;
 
-  const resumeLink = '../../assets/Dinesh_resume.pdf';
+  const resumeLink = '../src/assets/Dinesh_resume.pdf';
   return (
     <Container
       id="hero-section"
@@ -34,7 +41,7 @@ export default function Hero(props) {
       >
         <CardContent id="profile-card-detail" sx={{ gap: 4 }}>
           <Typography>
-            Hi!, I am
+            Hi!,
             <Typography
               // variant={isSmallScreen ? 'h1' : 'jobTitle'}
               variant="jobTitle"
@@ -43,7 +50,7 @@ export default function Hero(props) {
             >
               Dinesh Kumar
             </Typography>
-            I am base in city called Chennai India
+            I&apos;m based in Chennai, India.
           </Typography>
           <Box className="intro-paragraph" paragraph="true">
             <Typography sx={{ fontSize: '1rem', my: 2 }}>
@@ -64,7 +71,12 @@ export default function Hero(props) {
             >
               View Resume
             </Button>
-            <Button variant="outlined" target="_blank" sx={{ margin: 1 }}>
+            <Button
+              variant="outlined"
+              href="#aboutMe"
+              onClick={handleClick}
+              sx={{ margin: 1 }}
+            >
               About Me
             </Button>
           </Box>

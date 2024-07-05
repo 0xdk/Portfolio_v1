@@ -28,7 +28,7 @@ export default function Projects() {
       sx={{ marginY: 12, display: 'inline-block' }}
     >
       <Typography variant="h2" sx={{ mb: 8, textAlign: 'center' }}>
-        Project List
+        Projects
       </Typography>
       <List
         className="projects-list-container"

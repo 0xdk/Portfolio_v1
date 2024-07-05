@@ -6,12 +6,6 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 import Learning from './Learning';
 
-function handleClick(event) {
-  event.preventDefault();
-  const targetElement = document.getElementById('projects-section');
-  targetElement.scrollIntoView({ behavior: 'smooth' });
-}
-
 export default function Footer(props) {
   const { isSmallScreen } = props;
   return (
@@ -31,13 +25,13 @@ export default function Footer(props) {
           {/* <Link href="#">
             <CopyrightIcon color="secondary" />
           </Link> */}
-          <Link href="#projects-section" onClick={handleClick}>
+          <Link href="https://www.linkedin.com/in/dinesh-kumar-958a4a1ba/">
             <LinkedInIcon color="secondary" />
           </Link>
-          <Link href="#">
+          <Link href="https://www.instagram.com/0xd.k/">
             <InstagramIcon color="secondary" />
           </Link>
-          <Link href="#">
+          <Link href="https://github.com/0xdk">
             <GitHubIcon color="secondary" />
           </Link>
           {/* <CopyrightIcon color="secondary" sx={{ textAlign: 'center' }} /> */}

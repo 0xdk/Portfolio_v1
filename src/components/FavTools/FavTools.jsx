@@ -13,7 +13,7 @@ export default function FavTools(props) {
   return (
     <Container sx={{ mt: isSmallScreen ? 5 : 10 }}>
       <Typography variant="h2" sx={{ mb: 4, textAlign: 'center' }}>
-        Tech I Love to work with
+        Tech Stack
       </Typography>
       <Box
         sx={{
