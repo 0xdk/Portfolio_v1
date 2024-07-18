@@ -1,7 +1,7 @@
 const ProjectData = [
+  '/Gold-Price-tracker',
+  '/Campground-Project',
   '/tour-planning-landing-page',
-  //   '/Campground-Project',
-  //   '/Gold-Price-tracker',
 ];
 
 export default ProjectData;

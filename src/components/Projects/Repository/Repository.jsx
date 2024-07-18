@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 // Mui components
 import {
   CardContent,
@@ -14,29 +13,16 @@ import HomeIcon from '@mui/icons-material/Home';
 import GitHub from '@mui/icons-material/GitHub';
 // Components
 import RepositoryTitle from './RepositoryTitle';
-import RepositoryLang from './RepositoryLang';
+import RepositoryTopics from './RepositoryTopics';
 import getImageUrl from './imageUrls';
-// import img from '../../../images/profile-picture-1.jpeg';
 
 export default function Repository(props) {
-  const { name, description, html_url, homepage, languages_url, topics } =
-    props.data;
+  const { name, description, html_url, homepage, topics } = props.data;
   const { smallScreen } = props;
   const githubUrl = html_url;
   const homepageUrl = homepage;
   const imgUrl = getImageUrl(name);
 
-  const [languages, setLanguages] = useState({});
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    fetch(languages_url).then((response) =>
-      response.json().then((data) => {
-        setLanguages(data);
-        setIsLoading(false);
-      })
-    );
-  }, [languages_url]);
   return (
     <CardContent className="repo-container">
       <Grid
@@ -47,6 +33,7 @@ export default function Repository(props) {
         textAlign="center"
       >
         <Grid item xs={12} sm={4}>
+          {/* Repository Title */}
           <Box
             sx={{
               gap: 2,
@@ -56,13 +43,15 @@ export default function Repository(props) {
             }}
           >
             {/* repo title component */}
-            <RepositoryTitle title={name} url={githubUrl} topics={topics} />
+            <RepositoryTitle title={name} url={githubUrl} />
           </Box>
-          <Typography sx={{ mb: 3, paddingX: 2 }}>
+          {/* Repository Description */}
+          <Typography sx={{ my: 3, paddingX: 2 }}>
             {description === null
               ? "I'm working on the description"
               : description}
           </Typography>
+          {/* Repository Language */}
           <Box
             className="repo-lang-container"
             sx={{
@@ -73,12 +62,8 @@ export default function Repository(props) {
               justifyContent: 'center',
             }}
           >
-            {isLoading ? (
-              'loading...'
-            ) : (
-              // repo language component
-              <RepositoryLang languages={languages} />
-            )}
+            {/* Repository topics */}
+            <RepositoryTopics topics={topics} />
           </Box>
           <CardActions
             className="repo-button-container"

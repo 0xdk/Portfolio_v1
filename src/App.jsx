@@ -1,11 +1,9 @@
-// import { useState } from 'react';
 import './App.css';
 
-import { ThemeProvider } from '@mui/material/styles';
-// react component
+// React component
 import Header from './components/Header';
-import Hero from './components/Hero';
-import FavTools from './components/FavTools/FavTools';
+import Hero from './components/Hero/Hero';
+import TechStack from './components/techStack/TechStacks';
 import Projects from './components/Projects/Projects';
 import AboutMe from './components/AboutMe';
 import Footer from './components/Footer';
@@ -13,23 +11,16 @@ import Footer from './components/Footer';
 // MUI component
 import theme from './Theme/theme';
 import useMediaQuery from '@mui/material/useMediaQuery';
-// import { Component } from '@mui/material';
-
-// const sectionConfigs = {
-//   Component: 'section',
-//   sx: { marginY: 12, display: 'inline-block' },
-// };
+import { ThemeProvider } from '@mui/material/styles';
 
 const App = () => {
-  // const isIpadScreenLess = useMediaQuery(defaultTheme.breakpoints.down('md'));
-  // const isSmallScreen = useMediaQuery(theme.breakpoints.down('md'));
-  const isSmallScreen = useMediaQuery('(max-width:750px)');
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('md'));
   return (
     <ThemeProvider theme={theme}>
       <Header />
       <Hero isSmallScreen={isSmallScreen} />
-      <FavTools isSmallScreen={isSmallScreen} />
-      <Projects />
+      <TechStack isSmallScreen={isSmallScreen} />
+      <Projects isSmallScreen={isSmallScreen} />
       <AboutMe isSmallScreen={isSmallScreen} />
       <Footer isSmallScreen={isSmallScreen} />
     </ThemeProvider>

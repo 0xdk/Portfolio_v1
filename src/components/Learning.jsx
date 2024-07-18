@@ -23,7 +23,9 @@ export default function Learning(props) {
           Currently, I am focusing on TypeScript, DevOps and of course AI/ML,
           and I would be grateful for any guidance or advice in these areas.
         </Typography>
-        <Typography sx={{ mt: '7px', width: '100%', marginBottom: 4 }}>
+        <Typography
+          sx={{ mt: '7px', width: '100%', marginBottom: 4, fontWeight: 'bold' }}
+        >
           I built this portfolio from scratch using React and MUI.
         </Typography>
       </Box>

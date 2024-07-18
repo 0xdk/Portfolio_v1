@@ -1,0 +1,16 @@
+/* FavTools.css */
+
+/* Styling for the tool icons */
+.tool-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+}
+
+@media (max-width: 750px) {
+  .tool-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+  }
+}

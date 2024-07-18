@@ -1,26 +1,13 @@
-import {
-  Container,
-  List,
-  ListItem,
-  Typography,
-  useTheme,
-  useMediaQuery,
-} from '@mui/material';
+import { Container, List, ListItem, Typography } from '@mui/material';
 
 import './projects.css';
 
-// import ProjectData from './ProjectData';
-const ProjectData = [
-  '/Gold-Price-tracker',
-  '/Campground-Project',
-  '/tour-planning-landing-page',
-];
+// list of projects names
+import ProjectData from './ProjectData';
+// project component
 import Project from './project';
 
-export default function Projects() {
-  const theme = useTheme();
-  const smallScreen = useMediaQuery(theme.breakpoints.down('md'));
-
+export default function Projects({ isSmallScreen }) {
   return (
     <Container
       id="projects-section"
@@ -37,13 +24,14 @@ export default function Projects() {
         {ProjectData.map((path, index) => (
           <ListItem
             key={index}
-            sx={{ p: 0, width: smallScreen ? '100%' : '40%' }}
+            sx={{ p: 0, width: isSmallScreen ? '100%' : '40%' }}
           >
+            {/* Project Component */}
             <Project
               id={index}
               key={index}
               path={path}
-              smallScreen={smallScreen}
+              smallScreen={isSmallScreen}
             />
           </ListItem>
         ))}

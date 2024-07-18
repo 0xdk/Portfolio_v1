@@ -1,7 +1,6 @@
 import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 
 // Self-hosted fonts
-
 import RalewayRegular from './fonts/RalewayRegular.woff';
 import RalewayRegular2 from './fonts/RalewayRegular.woff2';
 import RalewayMedium from './fonts/RalewayMedium.woff';
@@ -43,7 +42,7 @@ let theme = createTheme({
     h2: {
       fontFamily: 'RalewayRegular',
       letterSpacing: 1,
-      fontSize: '2.5rem',
+      fontSize: '2rem',
     },
     h5: {
       fontFamily: 'RalewayRegular',
@@ -60,6 +59,7 @@ let theme = createTheme({
     },
     repositoryDate: {
       fontFamily: 'RalewayRegular',
+      fontSize: '1.5rem',
     },
   },
   components: {

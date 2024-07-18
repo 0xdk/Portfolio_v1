@@ -1,15 +1,3 @@
-header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-header ul#header-links {
-  display: flex;
-  flex-direction: row;
-}
-
 div#profile-card {
   display: flex;
   flex-direction: row;

@@ -13,23 +13,7 @@ section#projects-section ul.projects-list-container li {
   width: 100%;
 }
 
-section#projects-section div.repo-container {
-  display: flex;
-  flex-direction: column;
-}
-
-section#projects-section div.repo-container div.repo-lang-container,
-section#projects-section div.repo-container div.repository-title-links,
-section#projects-section div.repo-container div.repo-button-container {
-  display: flex;
-  flex-direction: row;
-}
-
 section#projects-section div.repo-container div.repository-title-container {
   display: flex;
   flex-direction: column;
-}
-
-section#projects-section div.repo-container div.title-links a {
-  line-height: 1.6rem;
 }

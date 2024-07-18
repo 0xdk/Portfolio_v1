@@ -2,7 +2,7 @@
 import javascriptIcon from '../../images/icons/javascript.svg';
 import html from '../../images/icons/html-5.svg';
 import css from '../../images/icons/css-3.svg';
-// import mui from '../../images/icons/material-ui.svg';
+import mui from '../../images/icons/material-ui.svg';
 import react from '../../images/icons/react.svg';
 import tailwind from '../../images/icons/tailwindcss.svg';
 import nodejs from '../../images/icons/Node.js.png';
@@ -18,6 +18,7 @@ import Solidity from '../../images/icons/Solidity.png';
 import Redis from '../../images/icons/Redis.png';
 import Python from '../../images/icons/python-icon.svg';
 
+// Top tools
 const tools = [
   { src: mongodb, alt: 'MongoDB Icon', name: 'MongoDB' },
   { src: express, alt: 'Express Icon', name: 'Express' },
@@ -28,6 +29,7 @@ const tools = [
   { src: Python, alt: 'Python Icon', name: 'Python' },
 ];
 
+// All tools list
 const allTools = [
   { src: mongodb, alt: 'MongoDB Icon', name: 'MongoDB' },
   { src: express, alt: 'Express Icon', name: 'Express' },
@@ -43,7 +45,7 @@ const allTools = [
   { src: Redis, alt: 'Redis Icon', name: 'Redis' },
   { src: mongoose, alt: 'Mongoose Icon', name: 'Mongoose' },
   { src: GitHub, alt: 'GitHub Icon', name: 'GitHub' },
-  // { src: mui, alt: 'mui Icon', name: 'Material UI' },
+  { src: mui, alt: 'mui Icon', name: 'Material UI' },
   { src: tailwind, alt: 'Tailwind css Icon', name: 'Tailwind CSS' },
   { src: Bootstrap, alt: 'Bootstrap Icon', name: 'Bootstrap' },
   { src: Solidity, alt: 'Solidity Icon', name: 'Solidity' },

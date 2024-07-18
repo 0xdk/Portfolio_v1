@@ -15,6 +15,5 @@
   display: flex;
   align-items: center;
   gap: 2rem;
-  /* color: inherit; */
   padding: 0 !important;
 }
